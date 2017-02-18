@@ -2,10 +2,10 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
+title:               Notes
+tagline:             Daily links
+url:                 http://mpuig.github.io
+paginate:            5
 baseurl:             ""
 
 # Assets
@@ -17,16 +17,16 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Marc Puig
+  url:               https://twitter.com/mpuig
+  email:             marc.puig@gmail.com
 
 # Custom vars
-version:             2.0.0
+version:             1.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/mpuig/mpuig.github.io
 
 # Gems
 gems:
   - jekyll-paginate
-  - jekyll-gist
+  - jekyll-seo-tag
