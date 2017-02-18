@@ -12,13 +12,15 @@ title: Home
           {% for note in post.notes %}
           {{note.keyw}}{% unless forloop.last %}, {% endunless %}
           {% endfor %}
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
         {% else %}
           {{ post.title }}
         {% endif %}
       </a>
     </h1>
 
+    <p class="post-date">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+    </p>
 
     {% if post.notes %}
     <ul>
