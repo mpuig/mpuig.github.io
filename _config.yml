@@ -1,6 +1,7 @@
 # Permalinks
 #
 permalink:           pretty
+relative_permalinks: true
 
 # Setup
 title:               Notes
@@ -19,24 +20,3 @@ sass:
 # About/contact
 author:
   name:              Marc Puig
-  twitter:           mpuig
-  url:               https://twitter.com/mpuig
-  email:             marc.puig+notes@gmail.com
-
-
-# Custom vars
-version:             0.1.0
-github:
-  repo:              https://github.com/mpuig.github.io
-
-gems:
-  - jekyll-paginate
-  - jekyll-seo-tag
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      author: Marc
-      twitter: mpuig

@@ -8,9 +8,9 @@ title: Home
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
-        {% if post.notes %}
-          {% for note in post.notes %}
-          {{note.keyw}}{% unless forloop.last %}, {% endunless %}
+        {% if site.posts %}
+          {% for post in site.posts %}
+          {{post.keyw}}{% unless forloop.last %}, {% endunless %}
           {% endfor %}
         {% else %}
           {{ post.title }}
@@ -21,12 +21,10 @@ title: Home
     <p class="post-date">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
     </p>
-    {% if post.notes %}
+    {% if site.posts %}
     <ul>
-      {% for note in post.notes %}
-        <li>{{note.desc}}  {% if note.via %}via {{note.via}}{% endif %}<br>
-          <a href="{{note.link}}">{{note.link}}</a>
-        </li>
+      {% for post in site.posts %}
+        <li>{{post.desc}}<br><a href="{{post.link}}">{{post.link}}</a></li>
       {% endfor %}
     </ul>
     {% else %}
