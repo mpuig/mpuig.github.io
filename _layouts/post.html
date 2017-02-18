@@ -15,7 +15,13 @@ layout: default
     {% for post in site.related_posts limit:3 %}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
+{% if post.notes %}
+  {% for note in post.notes %}
+  {{note.keyw}}{% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+{% else %}
+  {{ post.title }}
+{% endif %}
           <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
         </a>
       </li>
