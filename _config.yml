@@ -2,8 +2,8 @@
 permalink:           pretty
 
 # Setup
-title:               Notes
-tagline:             Daily links
+title:               Links
+tagline:             daily notes
 url:                 http://mpuig.github.io
 paginate:            5
 baseurl:             ""
