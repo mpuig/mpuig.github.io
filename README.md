@@ -1,5 +1,5 @@
 # Notes
 
-Repo to store daily links [Raf Roset](http://twitter.com/mpuig)
+Repo to store daily links [Marc Puig](http://twitter.com/mpuig)
 
 Work In Progress
