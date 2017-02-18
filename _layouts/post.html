@@ -16,7 +16,6 @@ layout: default
         <h3>
           <a href="{{ site.baseurl }}/{{ post.url }}">
 {% if post.notes %}
-  Nº{{ post.rid}}:
   {% for note in post.notes %}
   {{note.keyw}}{% unless forloop.last %}, {% endunless %}
   {% endfor %}
