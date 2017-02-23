@@ -7,6 +7,7 @@ tagline:             personal notes about interesing stuff
 url:                 http://mpuig.github.io
 paginate:            5
 baseurl:             ""
+analytics_id:        UA-92550742-1
 
 # Assets
 #
